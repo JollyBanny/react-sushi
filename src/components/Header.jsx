@@ -1,0 +1,35 @@
+import React from "react";
+import { Link } from "react-router-dom";
+
+import logoPng from "../assets/img/logo.png";
+function Header() {
+  return (
+    <div class="header">
+      <div class="container">
+        <div class="header__logo header-item">
+          <img width="120" src={logoPng} alt="logo" />
+          <div class="name">
+            <h1>fuji sushi</h1>
+            <p>Пол...суши это лава</p>
+          </div>
+        </div>
+        <ul class="nav-bar link-animate header-item">
+          <li>
+            <Link to="/">Главная</Link>
+          </li>
+          <li>
+            <Link to="/delivery">Оплата и доставка</Link>
+          </li>
+          <li>
+            <Link to="/about">О нас</Link>
+          </li>
+          <li>
+            <Link to="/promotion">Акции</Link>
+          </li>
+        </ul>
+      </div>
+    </div>
+  );
+}
+
+export default Header;
