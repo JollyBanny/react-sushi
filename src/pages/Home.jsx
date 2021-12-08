@@ -5,14 +5,14 @@ import { MenuBar, Carousel } from "../components";
 
 function Home() {
   return (
-    <div class="main">
-      <div class="menu">
-        <div class="container">
+    <div className="main">
+      <div className="menu">
+        <div className="container">
           <MenuBar />
-          <div class="menu-cart">
-            <a href="/cart.html" class="button button-cart">
+          <div className="menu-cart">
+            <a href="/cart.html" className="button button-cart">
               <span>520 ₽</span>
-              <div class="button-delimiter"></div>
+              <div className="button-delimiter"></div>
               <svg
                 width="18"
                 height="18"
@@ -48,130 +48,130 @@ function Home() {
         </div>
       </div>
       <Carousel />
-      <div class="catalog">
+      <div className="catalog">
         <h4>Каталог</h4>
-        <div class="container">
-          <div class="catalog-items">
-            <div class="card">
-              <div class="item">
-                <div class="image">
+        <div className="container">
+          <div className="catalog-items">
+            <div className="card">
+              <div className="item">
+                <div className="image">
                   <img
                     src="https://yoji-cdn.arora.pro/upload/57605119-91bb-4c26-aded-c31b450f1c37/size-1/75cebfd5-649c-4bf8-9b94-adc901731eb5.jpg"
                     alt=""
                   />
                 </div>
-                <div class="summary">
+                <div className="summary">
                   <Link to="/catalog?category=sushi">Суши</Link>
                 </div>
               </div>
             </div>
-            <div class="card">
-              <div class="item">
-                <div class="image">
+            <div className="card">
+              <div className="item">
+                <div className="image">
                   <img
                     src="https://yoji-cdn.arora.pro/upload/57605119-91bb-4c26-aded-c31b450f1c37/size-1/0b5708f9-60c0-4fb2-b780-adb201724f69.jpg"
                     alt=""
                   />
                 </div>
-                <div class="summary">
+                <div className="summary">
                   <Link to="/catalog?category=rolls">Роллы</Link>
                 </div>
               </div>
             </div>
-            <div class="card">
-              <div class="item">
-                <div class="image">
+            <div className="card">
+              <div className="item">
+                <div className="image">
                   <img
                     src="https://yoji-cdn.arora.pro/upload/57605119-91bb-4c26-aded-c31b450f1c37/size-1/d0e6b842-40df-462e-aa5c-adcc011d6b51.jpg"
                     alt=""
                   />
                 </div>
-                <div class="summary">
+                <div className="summary">
                   <Link to="/catalog?category=sets">Сеты</Link>
                 </div>
               </div>
             </div>
-            <div class="card">
-              <div class="item">
-                <div class="image">
+            <div className="card">
+              <div className="item">
+                <div className="image">
                   <img
                     src="https://yoji-cdn.arora.pro/upload/57605119-91bb-4c26-aded-c31b450f1c37/size-1/11f46690-558f-41b9-8209-ad8000edfa70.jpg"
                     alt=""
                   />
                 </div>
-                <div class="summary">
+                <div className="summary">
                   <Link to="/catalog?category=gunkans">Гунканы</Link>
                 </div>
               </div>
             </div>
-            <div class="card">
-              <div class="item">
-                <div class="image">
+            <div className="card">
+              <div className="item">
+                <div className="image">
                   <img
                     src="https://yoji-cdn.arora.pro/upload/57605119-91bb-4c26-aded-c31b450f1c37/size-1/ffccb6e3-7dda-4dab-8eef-ad8001248dac.jpg"
                     alt=""
                   />
                 </div>
-                <div class="summary">
+                <div className="summary">
                   <Link to="/catalog?category=sashimi">Сашими</Link>
                 </div>
               </div>
             </div>
-            <div class="card">
-              <div class="item">
-                <div class="image">
+            <div className="card">
+              <div className="item">
+                <div className="image">
                   <img
                     src="https://yoji-cdn.arora.pro/upload/57605119-91bb-4c26-aded-c31b450f1c37/size-1/628db05a-8778-47ec-92e3-adb500067188.jpg"
                     alt=""
                   />
                 </div>
-                <div class="summary">
+                <div className="summary">
                   <Link to="/catalog?category=soups">Супы</Link>
                 </div>
               </div>
             </div>
-            <div class="card">
-              <div class="item">
-                <div class="image">
+            <div className="card">
+              <div className="item">
+                <div className="image">
                   <img
                     src="https://yoji-cdn.arora.pro/upload/57605119-91bb-4c26-aded-c31b450f1c37/size-1/9a014cf2-9c95-48d4-805d-adb1016b9df6.jpg"
                     alt=""
                   />
                 </div>
-                <div class="summary">
+                <div className="summary">
                   <Link to="/catalog?category=salads">Салаты</Link>
                 </div>
               </div>
             </div>
-            <div class="card">
-              <div class="item">
-                <div class="image">
+            <div className="card">
+              <div className="item">
+                <div className="image">
                   <img
                     src="https://yoji-cdn.arora.pro/upload/57605119-91bb-4c26-aded-c31b450f1c37/size-1/974d9258-45ff-4765-9140-ad8000f071f9.jpg"
                     alt=""
                   />
                 </div>
-                <div class="summary">
+                <div className="summary">
                   <Link to="/catalog?category=desserts">Десерты</Link>
                 </div>
               </div>
             </div>
-            <div class="card">
-              <div class="item">
-                <div class="image">
+            <div className="card">
+              <div className="item">
+                <div className="image">
                   <img
                     src="https://yoji-cdn.arora.pro/upload/57605119-91bb-4c26-aded-c31b450f1c37/size-1/43e91be9-e92a-4f06-a712-ad7100a868a9.jpg"
                     alt=""
                   />
                 </div>
-                <div class="summary">
+                <div className="summary">
                   <Link to="/catalog?category=drinks">Напитки</Link>
                 </div>
               </div>
             </div>
-            <div class="card">
-              <div class="item">
-                <div class="image">
+            <div className="card">
+              <div className="item">
+                <div className="image">
                   <img
                     width="270px"
                     height="235px"
@@ -179,7 +179,7 @@ function Home() {
                     alt=""
                   />
                 </div>
-                <div class="summary">
+                <div className="summary">
                   <Link to="/catalog?category=parts">Комплектующие</Link>
                 </div>
               </div>

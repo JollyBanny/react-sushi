@@ -14,13 +14,13 @@ function Carousel() {
       items={1}
       nav
     >
-      <div class="item">
+      <div className="item">
         <img src={item_1} alt="" />
       </div>
-      <div class="item">
+      <div className="item">
         <img src={item_2} alt="" />
       </div>
-      <div class="item">
+      <div className="item">
         <img src={item_3} alt="" />
       </div>
     </OwlCarousel>

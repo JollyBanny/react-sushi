@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function MenuBar() {
   return (
-    <ul class="menu-bar link-animate">
+    <ul className="menu-bar link-animate">
       <li>
         <Link to="/catalog?category=sushi">Суши</Link>
       </li>

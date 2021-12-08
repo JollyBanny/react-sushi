@@ -4,16 +4,16 @@ import { Link } from "react-router-dom";
 import logoPng from "../assets/img/logo.png";
 function Header() {
   return (
-    <div class="header">
-      <div class="container">
-        <div class="header__logo header-item">
+    <div className="header">
+      <div className="container">
+        <div className="header__logo header-item">
           <img width="120" src={logoPng} alt="logo" />
-          <div class="name">
+          <div className="name">
             <h1>fuji sushi</h1>
             <p>Пол...суши это лава</p>
           </div>
         </div>
-        <ul class="nav-bar link-animate header-item">
+        <ul className="nav-bar link-animate header-item">
           <li>
             <Link to="/">Главная</Link>
           </li>
