@@ -182,25 +182,32 @@
       display: inline-block;
     }
   }
-  .cards {
+
+  .catalog-items {
     display: flex;
     flex-wrap: wrap;
-  }
-}
-.catalog-items {
-  display: flex;
-  flex-wrap: wrap;
-  .card {
-    .item {
-      .summary {
-        display: flex;
-        align-self: center;
-        font-size: 18px;
-        margin-bottom: 16px;
+    .card {
+      .item {
+        .summary {
+          display: flex;
+          align-self: center;
+          font-size: 18px;
+          margin-bottom: 16px;
+        }
       }
     }
   }
+  .card:last-child img {
+    width: 270px;
+    height: 235px;
+  }
 }
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .card {
   max-width: 25%;
   margin-bottom: 1.5rem;
