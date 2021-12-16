@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import {
-  sushi,
   desserts,
   drinks,
   gunkans,
@@ -12,6 +11,7 @@ import {
   sashimi,
   sets,
   soups,
+  sushi,
 } from "../assets/img/catalog";
 
 const catalogItems = [
@@ -27,7 +27,7 @@ const catalogItems = [
   { name: "Комплектующие", link: "parts", img: parts },
 ];
 
-function MenuCatalog() {
+function MenuCatalog({ onClickCategory }) {
   return (
     <div className="catalog">
       <h4>Каталог</h4>
@@ -35,14 +35,17 @@ function MenuCatalog() {
         <div className="catalog-items">
           {catalogItems.map((obj) => (
             <div className="card" key={`${obj.name}_${obj.img}`}>
-              <div className="item">
-                <div className="image">
-                  <img src={obj.img} alt="" />
+              <Link
+                to={`/catalog?category=${obj.link}`}
+                onClick={() => onClickCategory(obj)}
+              >
+                <div className="item">
+                  <div className="image">
+                    <img src={obj.img} alt="" />
+                  </div>
+                  <div className="summary">{obj.name}</div>
                 </div>
-                <div className="summary">
-                  <Link to={`/catalog?category=${obj.link}`}>{obj.name}</Link>
-                </div>
-              </div>
+              </Link>
             </div>
           ))}
         </div>
