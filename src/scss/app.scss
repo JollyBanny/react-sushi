@@ -137,7 +137,7 @@
     font-weight: 600;
     font-size: 16px;
   }
-  svg {
+  img {
     margin-right: 8px;
     margin-bottom: 1px;
   }
@@ -194,35 +194,39 @@
           font-size: 18px;
           margin-bottom: 16px;
         }
+        img {
+          width: 270px;
+          height: 235px;
+        }
       }
     }
-  }
-  .card:last-child img {
-    width: 270px;
-    height: 235px;
   }
 }
 
 .cards {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 .card {
   max-width: 25%;
   margin-bottom: 1.5rem;
   padding: 0 15px;
-
   .item {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    height: 100%;
     width: 270px;
     border-radius: 10px;
     background-color: $background_color_10;
     &:hover {
       cursor: pointer;
       box-shadow: 0 0 10px 5px #a88e79;
+    }
+    img {
+      width: 270px;
+      height: 235px;
     }
   }
 }
@@ -241,7 +245,7 @@
   flex-direction: column;
   padding: 0 15px 0 15px;
   color: $color_5;
-  a {
+  span {
     color: $color_5;
   }
 }
@@ -263,6 +267,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-top: auto;
   padding: 15px;
 }
 .value {
@@ -278,20 +283,25 @@
 .pr {
   font-size: 18px;
   font-weight: 600;
+  .bad-price {
+    font-size: 16px;
+    color: #b4aea8;
+    text-decoration: line-through;
+    margin-right: 8px;
+  }
 }
-.bottom {
-  button {
-    padding: 9.5px 15px;
-    border-radius: 60px;
-    border-width: 1.5px;
-    border-color: $border_color_1;
-    color: $color_6;
-    background-color: $background_color_10;
-    &:hover {
-      cursor: pointer;
-      color: $color_1;
-      background-color: $background_color_3;
-    }
+.bottom-button {
+  height: 40px;
+  padding: 9.5px 15px;
+  border-radius: 60px;
+  border-width: 1.5px;
+  border-color: $border_color_1;
+  color: $color_6;
+  background-color: $background_color_10;
+  &:hover {
+    cursor: pointer;
+    color: $color_1;
+    background-color: $background_color_3;
   }
 }
 .delivery {
