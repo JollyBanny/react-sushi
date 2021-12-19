@@ -6,13 +6,15 @@ function Header() {
   return (
     <div className="header">
       <div className="container">
-        <div className="header__logo header-item">
-          <img width="120" src={logoPng} alt="logo" />
-          <div className="name">
-            <h1>fuji sushi</h1>
-            <p>Пол...суши это лава</p>
+        <Link to="/">
+          <div className="header__logo header-item">
+            <img width="120" src={logoPng} alt="logo" />
+            <div className="name">
+              <h1>fuji sushi</h1>
+              <p>Пол...суши это лава</p>
+            </div>
           </div>
-        </div>
+        </Link>
         <ul className="nav-bar link-animate header-item">
           <li>
             <Link to="/">Главная</Link>

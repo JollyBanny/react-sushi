@@ -33,10 +33,7 @@ const catalogItems = [
 function MenuItem({ onClickCategory }) {
   return catalogItems.map((obj) => (
     <div className="card" key={`${obj.name}_${obj.img}`}>
-      <Link
-        to={`/catalog?category=${obj.link}`}
-        onClick={() => onClickCategory(obj)}
-      >
+      <Link to={`/catalog/${obj.link}`} onClick={() => onClickCategory(obj)}>
         <div className="item">
           <div className="image">
             <img src={obj.img} alt="" />

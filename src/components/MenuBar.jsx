@@ -23,7 +23,7 @@ function MenuBar({ onClickCategory }) {
       {catalogItems.map((obj, id) => (
         <li key={`${id}_${obj.link}`}>
           <Link
-            to={`/catalog?category=${obj.link}`}
+            to={`/catalog/${obj.link}`}
             onClick={() => onClickCategory(obj)}
           >
             {obj.name}
