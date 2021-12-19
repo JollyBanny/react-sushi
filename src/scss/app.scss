@@ -446,6 +446,7 @@
 .increments_button {
   border-bottom: 1px solid #ebeced;
   padding: 5px 20px;
+  font-size: 14px;
   &:hover {
     border-radius: 8px 8px 0 0;
     cursor: pointer;
@@ -456,6 +457,7 @@
 .decrements_button {
   border-top: 1px solid #ebeced;
   padding: 5px 20px;
+  font-size: 14px;
   &:hover {
     border-radius: 0 0 8px 8px;
     cursor: pointer;
@@ -478,8 +480,8 @@
   display: flex;
   align-items: center;
   svg {
-    font-size: 22px;
-    padding: 0 3px;
+    font-size: 18px;
+    padding: 4px;
     color: $color_9;
     border: 1px solid #d35043;
     border-radius: 50%;

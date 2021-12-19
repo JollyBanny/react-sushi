@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 function CatalogItem({ title, description, weight, price, superPrice, img }) {
   return (
@@ -35,5 +36,22 @@ function CatalogItem({ title, description, weight, price, superPrice, img }) {
     </div>
   );
 }
+
+CatalogItem.propTypes = {
+  title: PropTypes.string,
+  description: PropTypes.string,
+  weight: PropTypes.number,
+  price: PropTypes.number,
+  superPrice: PropTypes.number,
+  img: PropTypes.string,
+};
+
+CatalogItem.defaultProps = {
+  title: "----",
+  description: "----",
+  weight: 0,
+  price: 0,
+  superPrice: 0,
+};
 
 export default CatalogItem;

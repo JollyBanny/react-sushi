@@ -3,11 +3,12 @@ import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { fetchSushi } from "../redux/actions/foods";
 
-import { CatalogItem } from "../components";
+import { CatalogItem, CatalogItemLoad } from "../components";
 
 function Catalog() {
-  const { categoryBy } = useSelector(({ category }) => category);
+  const categoryBy = useSelector(({ category }) => category.categoryBy);
   const items = useSelector(({ foods }) => foods.items);
+  const isLoaded = useSelector(({ foods }) => foods.isLoaded);
 
   const dispatch = useDispatch();
   React.useEffect(() => {
@@ -19,7 +20,11 @@ function Catalog() {
       <h4>{categoryBy.name}</h4>
       <div className="container">
         <div className="cards">
-          {items && items.map((obj) => <CatalogItem key={obj.id} {...obj} />)}
+          {isLoaded
+            ? items.map((obj) => <CatalogItem key={obj.id} {...obj} />)
+            : Array(4)
+                .fill(0)
+                .map((_, index) => <CatalogItemLoad key={index} />)}
         </div>
       </div>
     </div>

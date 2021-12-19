@@ -6,6 +6,10 @@ export const setLoaded = (payload) => ({
 });
 
 export const fetchSushi = (categoryBy) => (dispatch) => {
+  dispatch({
+    type: "SET_LOADED",
+    payload: false,
+  });
   axios
     .get(`http://localhost:3002/foods?category=${categoryBy.link}`)
     .then(({ data }) => {

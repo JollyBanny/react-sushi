@@ -1,4 +1,7 @@
 import React from "react";
+
+import PropTypes from "prop-types";
+
 import { Link } from "react-router-dom";
 
 const catalogItems = [
@@ -30,5 +33,9 @@ function MenuBar({ onClickCategory }) {
     </ul>
   );
 }
+
+MenuBar.propTypes = {
+  onClickCategory: PropTypes.func.isRequired,
+};
 
 export default MenuBar;

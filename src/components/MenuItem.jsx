@@ -1,4 +1,7 @@
 import React from "react";
+
+import PropTypes from "prop-types";
+
 import { Link } from "react-router-dom";
 
 import {
@@ -27,31 +30,26 @@ const catalogItems = [
   { name: "Комплектующие", link: "parts", img: parts },
 ];
 
-function MenuCatalog({ onClickCategory }) {
-  return (
-    <div className="catalog">
-      <h4>Каталог</h4>
-      <div className="container">
-        <div className="catalog-items">
-          {catalogItems.map((obj) => (
-            <div className="card" key={`${obj.name}_${obj.img}`}>
-              <Link
-                to={`/catalog?category=${obj.link}`}
-                onClick={() => onClickCategory(obj)}
-              >
-                <div className="item">
-                  <div className="image">
-                    <img src={obj.img} alt="" />
-                  </div>
-                  <div className="summary">{obj.name}</div>
-                </div>
-              </Link>
-            </div>
-          ))}
+function MenuItem({ onClickCategory }) {
+  return catalogItems.map((obj) => (
+    <div className="card" key={`${obj.name}_${obj.img}`}>
+      <Link
+        to={`/catalog?category=${obj.link}`}
+        onClick={() => onClickCategory(obj)}
+      >
+        <div className="item">
+          <div className="image">
+            <img src={obj.img} alt="" />
+          </div>
+          <div className="summary">{obj.name}</div>
         </div>
-      </div>
+      </Link>
     </div>
-  );
+  ));
 }
 
-export default MenuCatalog;
+MenuItem.propTypes = {
+  onClickCategory: PropTypes.func.isRequired,
+};
+
+export default MenuItem;
