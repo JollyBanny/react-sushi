@@ -1,14 +1,13 @@
 import React from "react";
 
 import { useSelector, useDispatch } from "react-redux";
-import { fetchSushi } from "../redux/actions/foods";
+import { fetchSushi } from "../redux/actions/sushi";
 
 import { CatalogItem, CatalogItemLoad } from "../components";
 
 function Catalog() {
   const categoryBy = useSelector(({ category }) => category.categoryBy);
-  const items = useSelector(({ foods }) => foods.items);
-  const isLoaded = useSelector(({ foods }) => foods.isLoaded);
+  const { items, isLoaded } = useSelector(({ sushi }) => sushi);
 
   const dispatch = useDispatch();
   React.useEffect(() => {

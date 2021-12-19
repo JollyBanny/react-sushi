@@ -1,13 +1,27 @@
 import React from "react";
-import { Carousel, MenuCatalog } from "../components";
 
-function Home({onClickCategory}) {
+import PropTypes from "prop-types";
+
+import { Carousel, MenuItem } from "../components";
+
+function Home({ onClickCategory }) {
   return (
     <div>
       <Carousel />
-      <MenuCatalog onClickCategory={onClickCategory}/>
+      <div className="catalog">
+        <h4>Каталог</h4>
+        <div className="container">
+          <div className="catalog-items">
+            <MenuItem onClickCategory={onClickCategory} />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
+
+Home.propTypes = {
+  onClickCategory: PropTypes.func.isRequired,
+};
 
 export default Home;
