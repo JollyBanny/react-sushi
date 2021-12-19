@@ -3,13 +3,13 @@ import { YMaps, Map, Placemark } from "react-yandex-maps";
 
 function Delivery() {
   return (
-    <div class="container">
-      <div class="delivery">
+    <div className="container">
+      <div className="delivery">
         <h1>
           Доставка еды в Невельске из ресторана японской кухни "Fuji Sushi"
         </h1>
-        <div class="info">
-          <div class="delivery_text">
+        <div className="info">
+          <div className="delivery_text">
             <p>
               Бывают дни, когда для получения удовольствия достаточно бургера
               навынос. Мы считаем это нормальным, но одновременно понимаем – для
@@ -21,7 +21,7 @@ function Delivery() {
             <p>Часы работы доставки:</p>
             <p>Вс-Чт С 10:00 до 23:00, Пт-Сб С 10:00 до 24:00</p>
           </div>
-          <div class="map">
+          <div className="map">
             <h1>Мы находимся:</h1>
             <YMaps>
               <Map

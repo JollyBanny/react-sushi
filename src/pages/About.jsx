@@ -2,8 +2,8 @@ import React from "react";
 
 function About() {
   return (
-    <div class="container">
-      <div class="company">
+    <div className="container">
+      <div className="company">
         <h1>О нас</h1>
         <p>
           Каждый день Fuji Sushi открывает нам секреты и традиции Японской
