@@ -1,33 +1,37 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { setCategory } from "../redux/actions/category";
 
-import { Home, About, Delivery, Catalog } from "../pages";
-import { Cart, MenuBar } from "../components";
+import { Home, About, Delivery, Catalog, Cart } from "../pages";
+import { HeaderCart, MenuBar } from "../components";
 
 function Pages() {
   const dispatch = useDispatch();
-  const onSelectCategory = React.useCallback((category) => {
-    dispatch(setCategory(category));
-  }, [dispatch]);
+  const cartItems = useSelector(({ cart }) => cart.items);
+  const onSelectCategory = React.useCallback(
+    (category) => {
+      dispatch(setCategory(category));
+    },
+    [dispatch]
+  );
 
   return (
     <div className="main">
       <div className="menu">
         <div className="container">
           <MenuBar onClickCategory={onSelectCategory} />
-          <Cart />
+          <HeaderCart />
         </div>
       </div>
       <Routes>
         <Route path="/" element={<Home onClickCategory={onSelectCategory} />} />
         <Route path="/about" element={<About />} />
         <Route path="/delivery" element={<Delivery />} />
-        <Route path="/catalog" element={<Catalog />}>
-          <Route path="/catalog/:id" element={<Catalog />} />
-        </Route>
+        <Route path="/catalog/:id" element={<Catalog />} />
+        <Route path="/promotion" element={<Catalog />} />
+        <Route path="/cart" element={<Cart items={cartItems} />} />
       </Routes>
     </div>
   );

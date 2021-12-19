@@ -1,7 +1,28 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-function CatalogItem({ title, description, weight, price, superPrice, img }) {
+function CatalogItem({
+  id,
+  title,
+  description,
+  weight,
+  price,
+  superPrice,
+  img,
+  onClickAddSushi,
+  addedCount,
+}) {
+  const onAddSushi = () => {
+    const obj = {
+      id,
+      title,
+      description,
+      price: superPrice ? superPrice : price,
+      img,
+    };
+    onClickAddSushi(obj);
+  };
+
   return (
     <div className="card">
       <div className="item">
@@ -30,7 +51,10 @@ function CatalogItem({ title, description, weight, price, superPrice, img }) {
               </div>
             )}
           </div>
-          <button className="bottom-button">В корзину</button>
+          <button className="bottom-button" onClick={onAddSushi}>
+            <span>В корзину</span>
+            {addedCount && <i>{addedCount}</i>}
+          </button>
         </div>
       </div>
     </div>
@@ -44,6 +68,8 @@ CatalogItem.propTypes = {
   price: PropTypes.number,
   superPrice: PropTypes.number,
   img: PropTypes.string,
+  onClickAddSushi: PropTypes.func,
+  addedCount: PropTypes.number,
 };
 
 CatalogItem.defaultProps = {
