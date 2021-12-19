@@ -17,6 +17,16 @@ export const fetchSushi = (categoryBy) => (dispatch) => {
     });
 };
 
+export const fetchPromotion = () => (dispatch) => {
+  dispatch({
+    type: "SET_LOADED",
+    payload: false,
+  });
+  axios.get(`http://localhost:3002/foods?superPrice!=null`).then(({ data }) => {
+    dispatch(setSushi(data));
+  });
+};
+
 export const setSushi = (items) => ({
   type: "SET_SUSHI",
   payload: items,
