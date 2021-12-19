@@ -27,6 +27,9 @@
   .container {
     justify-content: space-between;
   }
+  a {
+    color: $color_3;
+  }
 }
 .nav-bar {
   display: flex;
@@ -38,7 +41,6 @@
   align-items: center;
   a {
     font-size: 16px;
-    color: $color_3;
     text-decoration: none;
     margin-left: 16px;
   }
@@ -296,12 +298,35 @@
   border-radius: 60px;
   border-width: 1.5px;
   border-color: $border_color_1;
-  color: $color_6;
   background-color: $background_color_10;
+  color: $color_6;
   &:hover {
     cursor: pointer;
     color: $color_1;
     background-color: $background_color_3;
+    i {
+      color: $color_6;
+      background-color: $background_color_10;
+    }
+  }
+  span {
+    position: relative;
+    top: -2px;
+    display: inline-block;
+    line-height: 22px;
+  }
+  i {
+    position: relative;
+    top: -2px;
+    left: 3px;
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    line-height: 22px;
+    border-radius: 50%;
+    background-color: $background_color_3;
+    color: $color_1;
+    font-style: normal;
   }
 }
 .delivery {
