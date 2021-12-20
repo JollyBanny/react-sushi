@@ -412,7 +412,8 @@
     margin-right: 20px;
     img {
       object-fit: cover;
-      height: 100%;
+      width: 128px;
+      height: 128px;
       border-radius: 8px;
     }
   }
@@ -422,6 +423,7 @@
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
+  width: 50%;
   margin-right: 20px;
   border-radius: 8px;
   border: 1px solid #ebeced;
@@ -435,6 +437,9 @@
   }
 }
 .cart_ingredients {
+  .description {
+    display: flex;
+  }
   span {
     margin: 0 10px;
     font-size: 12px;
@@ -449,6 +454,8 @@
   display: flex;
   flex-wrap: wrap;
   align-content: center;
+  justify-content: center;
+  width: 8%;
   padding: 0 20px;
   margin-right: 20px;
   span {
@@ -493,6 +500,7 @@
 .sum {
   display: flex;
   align-items: center;
+  width: 10%;
   margin-right: 20px;
   padding: 0 20px;
   span {
@@ -704,6 +712,9 @@ legend {
   }
   a {
     padding: 20px 32px;
+  }
+  i {
+    font-style: normal;
   }
 }
 .footer {
