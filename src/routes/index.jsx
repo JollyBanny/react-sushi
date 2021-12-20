@@ -1,7 +1,7 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { setCategory } from "../redux/actions/category";
 
 import { Home, About, Delivery, Catalog, Cart } from "../pages";
@@ -9,7 +9,6 @@ import { HeaderCart, MenuBar } from "../components";
 
 function Pages() {
   const dispatch = useDispatch();
-  const cartItems = useSelector(({ cart }) => cart.items);
   const onSelectCategory = React.useCallback(
     (category) => {
       dispatch(setCategory(category));
@@ -31,7 +30,7 @@ function Pages() {
         <Route path="/delivery" element={<Delivery />} />
         <Route path="/catalog/:id" element={<Catalog />} />
         <Route path="/promotion" element={<Catalog />} />
-        <Route path="/cart" element={<Cart items={cartItems} />} />
+        <Route path="/cart" element={<Cart />} />
       </Routes>
     </div>
   );
