@@ -458,6 +458,9 @@
   width: 8%;
   padding: 0 20px;
   margin-right: 20px;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
   span {
     font-size: 22px;
     font-weight: 600;
@@ -471,6 +474,9 @@
   border-radius: 8px;
   margin-right: 20px;
   background-color: $background_color_11;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
   span {
     text-align: center;
   }
@@ -503,6 +509,9 @@
   width: 10%;
   margin-right: 20px;
   padding: 0 20px;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
   span {
     font-size: 22px;
     font-weight: 700;
