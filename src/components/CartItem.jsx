@@ -3,43 +3,63 @@ import PropTypes from "prop-types";
 
 import { BsPlusLg, BsDashLg, BsXLg } from "react-icons/bs";
 
-function CartItem({ name, description, price, totalPrice }) {
+function CartItem({
+  id,
+  name,
+  description,
+  price,
+  totalPrice,
+  totalCount,
+  image,
+  onRemove,
+  onPlus,
+  onMinus,
+}) {
+  const handleRemoveClick = () => {
+    onRemove(id);
+  };
+
+  const handlePlusClick = () => {
+    onPlus(id);
+  };
+
+  const handleMinusClick = () => {
+    onMinus(id);
+  };
+
   return (
     <div className="cart_card">
       <div className="cart_item">
         <div className="image">
-          <img
-            src="http://cdng.arora.pro/upload/57605119-91bb-4c26-aded-c31b450f1c37/size-2/d0e6b842-40df-462e-aa5c-adcc011d6b51.jpg"
-            alt=""
-          />
+          <img src={image} alt="" />
         </div>
         <div className="cart_info">
           <div className="cart_summary">
-            <h4>Сет Трио</h4>
+            <h4>{name}</h4>
           </div>
           <div className="cart_ingredients">
-            <span>
-              <b>Состав: </b>Роллы: Тунец Креветка с авокадо, Филадельфия с
-              авокадо и огурцом, Филадельфия с Копчёным Угрём
+            <span className="description">
+              <b>Состав: </b>
+              <span>{description}</span>
             </span>
           </div>
         </div>
         <div className="cart_price">
-          <span> 2960 ₽ </span>
+          <span> {price} ₽ </span>
         </div>
         <div className="count">
-          <span className="increments_button">
+          <span className="increments_button" onClick={handlePlusClick}>
             <BsPlusLg />
           </span>
-          <span>1</span>
-          <span className="decrements_button">
+          <span>{totalCount}</span>
+          <span className="decrements_button" onClick={handleMinusClick}>
             <BsDashLg />
           </span>
         </div>
         <div className="sum">
-          <span> 2690 ₽ </span>
+          <span> {totalPrice} ₽ </span>
         </div>
-        <span className="delete">
+        <span className="delete" onClick={handleRemoveClick}>
           <BsXLg />
         </span>
       </div>

@@ -3,7 +3,7 @@ import React from "react";
 import { BsPlusLg, BsDashLg } from "react-icons/bs";
 import order from "../assets/img/order.png";
 
-function OrderForm() {
+function OrderForm({ totalPrice }) {
   return (
     <div className="confirm">
       <form action="post">
@@ -129,7 +129,7 @@ function OrderForm() {
             <img src={order} alt="" />
             <div className="total_price">
               <span>Итого к оплате</span>
-              <span className="total-sum">2690 ₽</span>
+              <span className="total-sum">{totalPrice} ₽</span>
             </div>
             <input type="submit" className="sub" value="Оформить" />
           </fieldset>

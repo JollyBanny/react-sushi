@@ -2,7 +2,7 @@ import React from "react";
 
 import { useSelector, useDispatch } from "react-redux";
 import { fetchSushi, fetchPromotion } from "../redux/actions/sushi";
-import { addSushiToCart } from "../redux/actions/cart";
+import { addItemToCart } from "../redux/actions/cart";
 
 import { CatalogItem, CatalogItemLoad } from "../components";
 
@@ -14,7 +14,7 @@ function Catalog() {
   const dispatch = useDispatch();
 
   const handleAddSushi = (obj) => {
-    dispatch(addSushiToCart(obj));
+    dispatch(addItemToCart(obj));
   };
 
   let category = window.location.pathname.split("/")[1];
@@ -34,7 +34,9 @@ function Catalog() {
                 <CatalogItem
                   key={obj.id}
                   onClickAddSushi={handleAddSushi}
-                  addedCount={cartItems[obj.id] && cartItems[obj.id].length}
+                  addedCount={
+                    cartItems[obj.id] && cartItems[obj.id].items.length
+                  }
                   {...obj}
                 />
               ))
