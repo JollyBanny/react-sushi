@@ -102,6 +102,14 @@ const cart = (state = initialState, action) => {
       };
     }
 
+    case "CLEAR_CART": {
+      return {
+        items: {},
+        totalCount: 0,
+        totalPrice: 0,
+      };
+    }
+
     default:
       return state;
   }

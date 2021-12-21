@@ -535,6 +535,13 @@
     }
   }
 }
+
+.error-msg {
+  margin: 0 !important;
+  font-size: 14px;
+  color: rgb(255, 52, 52);
+}
+
 .confirm {
   display: flex;
   flex-direction: column;
@@ -547,15 +554,24 @@
   }
   span {
     line-height: 30px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
   }
 }
 fieldset {
   border: 0 none;
   margin-bottom: 20px;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
 legend {
   margin-bottom: 20px;
   font-weight: 600;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
 .form-control {
   display: block;

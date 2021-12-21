@@ -8,6 +8,7 @@
       "weight": 25,
       "price": 170,
       "superPrice": null,
+      "promotion": false,
       "img": "https://cdng.arora.pro/upload/57605119-91bb-4c26-aded-c31b450f1c37/size-1/6d0af832-5c51-4767-9cba-ad810067c563.jpg"
     },
     {
@@ -18,6 +19,7 @@
       "weight": 34,
       "price": 210,
       "superPrice": null,
+      "promotion": false,
       "img": "https://cdng.arora.pro/upload/57605119-91bb-4c26-aded-c31b450f1c37/size-1/73cd56db-43b3-4a19-9b16-adc9017360e6.jpg"
     },
     {
@@ -28,6 +30,7 @@
       "weight": 30,
       "price": 270,
       "superPrice": null,
+      "promotion": false,
       "img": "https://cdng.arora.pro/upload/57605119-91bb-4c26-aded-c31b450f1c37/size-1/c4446056-43bd-40af-bf2e-ad9b014df958.jpg"
     },
     {
@@ -38,6 +41,7 @@
       "weight": 220,
       "price": 790,
       "superPrice": null,
+      "promotion": false,
       "img": "https://cdng.arora.pro/upload/57605119-91bb-4c26-aded-c31b450f1c37/size-1/0b5708f9-60c0-4fb2-b780-adb201724f69.jpg"
     },
     {
@@ -48,6 +52,7 @@
       "weight": 220,
       "price": 890,
       "superPrice": null,
+      "promotion": false,
       "img": "https://cdng.arora.pro/upload/57605119-91bb-4c26-aded-c31b450f1c37/size-1/a76fa392-9c44-4d7c-9d28-ad9b013f4578.PNG"
     },
     {
@@ -58,6 +63,7 @@
       "weight": 210,
       "price": 1050,
       "superPrice": 900,
+      "promotion": true,
       "img": "https://cdng.arora.pro/upload/57605119-91bb-4c26-aded-c31b450f1c37/size-1/16b4201d-8b12-42dd-925b-adb201711880.jpg"
     },
     {
@@ -68,6 +74,7 @@
       "weight": 610,
       "price": 2690,
       "superPrice": null,
+      "promotion": false,
       "img": "https://cdng.arora.pro/upload/57605119-91bb-4c26-aded-c31b450f1c37/size-1/d0e6b842-40df-462e-aa5c-adcc011d6b51.jpg"
     },
     {
@@ -78,6 +85,7 @@
       "weight": 630,
       "price": 2790,
       "superPrice": 2490,
+      "promotion": true,
       "img": "https://cdng.arora.pro/upload/57605119-91bb-4c26-aded-c31b450f1c37/size-1/0435a5da-087e-40d7-abca-adcc01279fbe.jpg"
     },
     {
@@ -88,6 +96,7 @@
       "weight": 740,
       "price": 3890,
       "superPrice": null,
+      "promotion": false,
       "img": "https://cdng.arora.pro/upload/57605119-91bb-4c26-aded-c31b450f1c37/size-1/1e7d80f0-2293-4fd9-a51d-adcc011d2298.jpg"
     },
     {
@@ -98,6 +107,7 @@
       "weight": 40,
       "price": 190,
       "superPrice": null,
+      "promotion": false,
       "img": "https://cdng.arora.pro/upload/57605119-91bb-4c26-aded-c31b450f1c37/size-1/ed8d10a5-e8ea-4265-9d23-ad8000ee2422.jpg"
     },
     {
@@ -108,6 +118,7 @@
       "weight": 39,
       "price": 290,
       "superPrice": 240,
+      "promotion": true,
       "img": "https://cdng.arora.pro/upload/57605119-91bb-4c26-aded-c31b450f1c37/size-1/11f46690-558f-41b9-8209-ad8000edfa70.jpg"
     },
     {
@@ -118,6 +129,7 @@
       "weight": 39,
       "price": 230,
       "superPrice": null,
+      "promotion": false,
       "img": "https://cdng.arora.pro/upload/57605119-91bb-4c26-aded-c31b450f1c37/size-1/683f54e6-0057-4d55-b4b6-ad8000eea9ac.jpg"
     },
     {
@@ -128,6 +140,7 @@
       "weight": 50,
       "price": 490,
       "superPrice": null,
+      "promotion": false,
       "img": "https://cdng.arora.pro/upload/57605119-91bb-4c26-aded-c31b450f1c37/size-1/ffccb6e3-7dda-4dab-8eef-ad8001248dac.jpg"
     },
     {
@@ -138,6 +151,7 @@
       "weight": 55,
       "price": 350,
       "superPrice": null,
+      "promotion": false,
       "img": "https://cdng.arora.pro/upload/57605119-91bb-4c26-aded-c31b450f1c37/size-1/3c1491e3-5f2e-4f88-86d5-ad800127ed24.jpg"
     },
     {
@@ -148,6 +162,7 @@
       "weight": 520,
       "price": 790,
       "superPrice": null,
+      "promotion": false,
       "img": "https://cdng.arora.pro/upload/57605119-91bb-4c26-aded-c31b450f1c37/size-1/628db05a-8778-47ec-92e3-adb500067188.jpg"
     },
     {
@@ -158,6 +173,7 @@
       "weight": 380,
       "price": 450,
       "superPrice": null,
+      "promotion": false,
       "img": "https://cdng.arora.pro/upload/57605119-91bb-4c26-aded-c31b450f1c37/size-1/34847c90-6e84-4e6d-800f-ad9801318a7a.jpg"
     },
     {
@@ -168,6 +184,7 @@
       "weight": 350,
       "price": 320,
       "superPrice": null,
+      "promotion": false,
       "img": "https://cdng.arora.pro/upload/57605119-91bb-4c26-aded-c31b450f1c37/size-1/0f8a7867-cdae-41e9-816e-ad800130e698.jpg"
     },
     {
@@ -178,6 +195,7 @@
       "weight": 120,
       "price": 890,
       "superPrice": null,
+      "promotion": false,
       "img": "https://cdng.arora.pro/upload/57605119-91bb-4c26-aded-c31b450f1c37/size-1/f13aa143-20f2-40b8-855b-ad8000f13082.jpg"
     },
     {
@@ -188,6 +206,7 @@
       "weight": 150,
       "price": 450,
       "superPrice": null,
+      "promotion": false,
       "img": "https://cdng.arora.pro/upload/57605119-91bb-4c26-aded-c31b450f1c37/size-1/1e051247-74f7-42f9-8c53-ad8001318a3a.jpg"
     },
     {
@@ -198,6 +217,7 @@
       "weight": 140,
       "price": 790,
       "superPrice": 490,
+      "promotion": true,
       "img": "https://cdng.arora.pro/upload/57605119-91bb-4c26-aded-c31b450f1c37/size-1/dff879ee-12c3-4d27-9bbf-adb1016b1882.jpg"
     },
     {
@@ -208,6 +228,7 @@
       "weight": 170,
       "price": 450,
       "superPrice": null,
+      "promotion": false,
       "img": "https://cdng.arora.pro/upload/57605119-91bb-4c26-aded-c31b450f1c37/size-1/d94bb11f-4f27-4cc1-9187-ad8000f05ea7.jpg"
     },
     {
@@ -218,6 +239,7 @@
       "weight": 140,
       "price": 390,
       "superPrice": null,
+      "promotion": false,
       "img": "https://cdng.arora.pro/upload/57605119-91bb-4c26-aded-c31b450f1c37/size-1/f4af7eb5-78c6-478e-ba37-ad8000f08c3f.jpg"
     },
     {
@@ -228,6 +250,7 @@
       "weight": 170,
       "price": 690,
       "superPrice": null,
+      "promotion": false,
       "img": "https://cdng.arora.pro/upload/57605119-91bb-4c26-aded-c31b450f1c37/size-1/c8bea6cd-60f1-4faf-94de-ad800133dbd5.jpg"
     },
     {
@@ -238,6 +261,7 @@
       "weight": 330,
       "price": 190,
       "superPrice": null,
+      "promotion": false,
       "img": "https://cdng.arora.pro/upload/57605119-91bb-4c26-aded-c31b450f1c37/size-1/b541b8db-ab14-422a-b5ab-ad7100a8ec99.jpg"
     },
     {
@@ -248,6 +272,7 @@
       "weight": 200,
       "price": 180,
       "superPrice": null,
+      "promotion": false,
       "img": "https://cdng.arora.pro/upload/57605119-91bb-4c26-aded-c31b450f1c37/size-1/f429d36e-68ad-42c6-85a2-ade90007148c.jpg"
     },
     {
@@ -258,6 +283,7 @@
       "weight": 250,
       "price": 120,
       "superPrice": null,
+      "promotion": false,
       "img": "https://cdng.arora.pro/upload/57605119-91bb-4c26-aded-c31b450f1c37/size-1/2f3445ad-cc7b-4c4a-806f-ade90006b6f0.jpg"
     },
     {
@@ -268,6 +294,7 @@
       "weight": 40,
       "price": 20,
       "superPrice": null,
+      "promotion": false,
       "img": "https://cdn.100sp.ru/pictures/462213412"
     },
     {
@@ -278,6 +305,7 @@
       "weight": 30,
       "price": 20,
       "superPrice": null,
+      "promotion": false,
       "img": "https://avatars.mds.yandex.net/get-zen_doc/3415797/pub_6013d9b37fd0a5390fce4b63_6013da411dce1b4b96371cdb/scale_1200"
     },
     {
@@ -288,7 +316,30 @@
       "weight": 10,
       "price": 20,
       "superPrice": null,
+      "promotion": false,
       "img": "https://kaigourmet.com/wp-content/uploads/2020/08/Wasabi-on-dish-shutterstock.jpg"
+    }
+  ],
+  "order": [
+    {
+      "name": "Андрей",
+      "phone": "+79242873721",
+      "email": "kostya@krutoy.ru",
+      "persons": "12",
+      "street": "Держинского",
+      "building": "4а",
+      "entrance": "",
+      "level": "",
+      "flat": "",
+      "comment": "",
+      "order": [
+        {
+          "id": 21,
+          "title": "Ананас в шоколаде",
+          "count": 5
+        }
+      ],
+      "id": 1
     }
   ]
 }

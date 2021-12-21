@@ -20,7 +20,7 @@ export const fetchPromotion = () => (dispatch) => {
     type: "SET_LOADED",
     payload: false,
   });
-  axios.get(`/foods?superPrice!=null`).then(({ data }) => {
+  axios.get(`/foods?promotion=true`).then(({ data }) => {
     dispatch(setSushi(data));
   });
 };

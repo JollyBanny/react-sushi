@@ -20,7 +20,7 @@ function Header() {
             <Link to="/">Главная</Link>
           </li>
           <li>
-            <Link to="/delivery">Оплата и доставка</Link>
+            <Link to="/delivery">Доставка</Link>
           </li>
           <li>
             <Link to="/about">О нас</Link>
