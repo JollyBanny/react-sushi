@@ -26,13 +26,13 @@ function Delivery() {
             <YMaps>
               <Map
                 defaultState={{
-                  center: [55.751574, 37.573856],
-                  zoom: 12,
+                  center: [46.674021, 141.856023],
+                  zoom: 18,
                 }}
                 height={400}
                 width={500}
               >
-                <Placemark geometry={[55.751574, 37.573856]} />
+                <Placemark geometry={[46.674021, 141.856023]} />
               </Map>
             </YMaps>
           </div>
